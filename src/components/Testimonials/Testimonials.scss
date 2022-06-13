@@ -1,0 +1,88 @@
+.testi-container {
+  min-height: 40vh;
+  padding: 1rem 1rem;
+  //   background-color: black;
+
+  .testi-card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+
+    figure {
+      width: 80%;
+      img {
+        padding-bottom: 1rem;
+        width: 100%;
+      }
+    }
+
+    h5 {
+      font-size: 1.3rem;
+
+      margin-bottom: 0.5rem; //   font-family: "Love Ya Like A Sister", cursive;
+    }
+    p {
+      font-style: italic;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .testi-container {
+    padding: 1rem 6rem;
+
+    .testi-card {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: 1fr max-content;
+
+      figure {
+        width: 70%;
+      }
+
+      p {
+        grid-column: 1/-1;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .testi-container {
+    padding: 1rem 25%;
+
+    .testi-card {
+      /* From https://css.glass */
+
+      padding: 3rem 1.4rem;
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: 1fr max-content;
+
+      figure {
+        width: 70%;
+        img {
+          padding-bottom: 1rem;
+          width: 100%;
+        }
+      }
+
+      h5 {
+        font-size: 1.3rem;
+
+        margin-bottom: 0.5rem; //   font-family: "Love Ya Like A Sister", cursive;
+      }
+      p {
+        font-style: italic;
+        grid-column: 1/-1;
+      }
+    }
+  }
+}

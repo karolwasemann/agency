@@ -1,0 +1,207 @@
+.about-container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 3rem, 100% 100%, 0% 100%);
+  color: whitesmoke;
+  overflow: hidden;
+  .about-blur {
+    // height: 200vh;
+    background: rgba(0, 0, 0, 0.99999);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 1rem 0;
+
+    .about-heading {
+      padding-top: 5rem;
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        padding-left: 1rem;
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      h4 {
+        padding-left: 2rem;
+
+        font-size: 2.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+      }
+    }
+
+    .about-gif {
+      max-width: 80vw;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .about-text {
+      transform-origin: center right;
+      transform: rotate(90deg);
+      display: inline-block;
+      font-size: 4rem;
+      color: rgba(255, 255, 255, 0.07);
+      font-weight: bold;
+      position: absolute;
+      right: 2rem;
+    }
+
+    .about-slogan {
+      margin: 2rem 1rem 2rem 1rem;
+      h2 {
+        margin-bottom: 0.5rem;
+        margin-right: 4rem;
+      }
+      p {
+        margin-left: 2rem;
+      }
+    }
+    h2 {
+      padding-left: 1rem;
+      font-size: 3rem;
+    }
+    h4 {
+      padding-left: 2rem;
+
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 2rem;
+    }
+    .green {
+      width: 100%;
+      position: relative;
+
+      img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .bgc {
+        position: absolute;
+        inset: 0;
+
+        // background: rgb(0, 0, 0);
+        background: linear-gradient(
+          250deg,
+          rgba(0, 0, 0, 1) 20%,
+          rgba(19, 18, 18, 0) 50%,
+          rgba(0, 0, 0, 1) 80%
+        );
+        transition: background-position 2s ease-out;
+      }
+    }
+
+    .desc {
+      margin: 1rem 1rem 2rem 2rem;
+
+      h4 {
+        text-align: right;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: whitesmoke;
+      }
+      p {
+        color: whitesmoke;
+      }
+    }
+
+    .contact {
+      text-align: center;
+
+      button {
+        padding: 0.5rem 2rem;
+        border-radius: 5px;
+        border: 2px solid rgb(255, 105, 180);
+        background-color: transparent;
+        outline: none;
+        box-shadow: rgba(255, 105, 180, 0.6) 0px 2px 8px 0px;
+
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    .about-blur {
+      padding: 10rem 8rem 4rem;
+
+      .about-heading {
+        h2 {
+          padding-left: 2rem;
+          font-size: 4rem;
+        }
+        h4 {
+          padding-left: 8rem;
+          font-size: 1.4rem;
+        }
+      }
+
+      .about-text {
+        font-size: 8rem;
+
+        right: 5rem;
+      }
+
+      .about-slogan {
+        margin: 8rem 6rem;
+        div {
+          h2 {
+            margin-bottom: 4rem;
+            margin-right: 7rem;
+            font-size: 4rem;
+          }
+          p {
+            margin-left: 6rem;
+            margin-right: 6rem;
+            font-size: 3rem;
+          }
+        }
+      }
+      .green {
+        img {
+          height: 400px;
+        }
+      }
+
+      .desc {
+        margin: 6rem 6rem 10rem 10rem;
+
+        h4 {
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      .contact {
+        text-align: center;
+
+        button {
+          padding: 1.2rem 4rem;
+          border-radius: 5px;
+          border: 4px solid rgb(255, 105, 180);
+          background-color: transparent;
+          outline: none;
+          box-shadow: rgba(255, 105, 180, 0.8) 0px 4px 10px 0px;
+
+          a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 1.8rem;
+            letter-spacing: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

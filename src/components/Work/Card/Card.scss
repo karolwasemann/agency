@@ -1,0 +1,108 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 100%;
+  // overflow: hidden;
+
+  figure {
+    background-color: rgb(255, 105, 180);
+    transition: transform 0.4s ease-in-out;
+    position: relative;
+    width: 100%;
+
+    img {
+      // height: 200px;
+      width: 100%;
+      max-height: 350px;
+
+      // margin: 0 auto;
+      background-color: #fff;
+      display: block;
+      object-fit: cover;
+      // object-position: center center;
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out;
+    }
+    .card-bgc {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.1);
+    }
+    &:hover img {
+      opacity: 0.6;
+    }
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  h4 {
+    margin-top: 1rem;
+  }
+  h3 {
+    margin-top: 0.5rem;
+    // color: #e59ec5;
+    color: rgb(255, 105, 180);
+  }
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 38vw;
+    figure {
+      background-color: rgb(255, 105, 180);
+      // margin-bottom: 0.5rem;
+      transition: transform 0.4s ease-in-out;
+
+      img {
+        max-height: 320px;
+
+        // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        //   rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      }
+    }
+    h4 {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+    }
+    h3 {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    figure {
+      background-color: rgb(255, 105, 180);
+      // margin-bottom: 0.5rem;
+      transition: transform 0.4s ease-in-out;
+
+      img {
+        max-height: 520px;
+        // max-width: 80%;
+        // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        //   rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      }
+    }
+    h4 {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+    }
+    h3 {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}

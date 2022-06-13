@@ -1,0 +1,23 @@
+.footer-con {
+  padding: 2rem 0 0;
+  h3 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    li {
+      font-size: 1.4rem;
+    }
+  }
+  figure {
+    max-width: 96vw;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
